@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+    <head>
+
+        <title>Home Page</title>
+
+        <!-- Required meta tags -->
+
+        <meta charset="UTF-8">
+
+        <!-- Bootstrap CSS -->
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <!-- Additional styling -->
+
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body style="background:lightslategray">
+
+        <!-- Creating the Navbar class - size, background color, font color -->
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+        
+
+            <!-- Define container for navigation bar -->
+
+            <div class="container-fluid">
+
+
+
+                <!-- Define the navbar header ... apply some simple formatting, add a logo, add alignment -->
+
+                <div class="navbar-header">
+
+                    <a class="navbar-brand" href="home.html">
+
+                       
+
+                        <!-- Adding the text here so it's after the picture -->
+
+                        <span style="font-size:25px">Lattitude</span>
+
+                    </a>
+
+                </div>
+
+
+
+                <!-- Creating the nav bar toggler for when the page shrinks-->
+
+                <div class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </div>
+
+            
+
+                <!-- Creating the nav bar buttons using a list-->
+
+                <div class="collapse navbar-collapse">
+
+                    <ul class="nav navbar-nav ml-auto">
+
+                        <!-- Creating nav bar button that is a dropdown -->
+
+                        <li class="nav-item">
+
+                                <a class="nav-link" href="home.html">Home</a>
+
+                        </li>                        
+
+                        <li class="nav-item dropdown active">
+
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                                Plots
+
+                            </a>
+
+                            <!-- Dropdown menu bootstrap class -->
+
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+
+                                <a class="dropdown-item" href="maxtemp.html">Temperature</a>
+
+                                <a class="dropdown-item" href="humidity.html">Humidity</a>
+
+                                <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+
+                                <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+
+                            </div>
+
+                        </li>
+
+                        <li class="nav-item">
+
+                            <a class="nav-link" href="comparison.html">Comparison</a>
+
+                        </li>
+
+                        <li class="nav-item">
+
+                            <a class="nav-link" href="data.html">Data</a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+
+        <!-- Creating seven column box to place the first image and starter text -->
+
+        <div class="row" style="padding-top:100px; padding-bottom:100px">
+
+            <div class="col-md-7" style="padding-left:125px">
+
+                <div class="card">
+
+                    <div class="card-body">
+
+                        <h2 class="card-title">Max Temperature</h2>
+
+                        <hr class="my-4">
+
+                        <div class = "box viz_header">
+
+                            <img src="Max Temp.png" alt="Max Temp" height ="475" width="700">
+
+                        <p class="text1"> As expected, the weather becomes significantly warmer as one approaches the equator (0 Deg. Lattitude). More Interstingly, however, is the fact that the southern hemisphere tends to be warmer this time of year than the northern hemisphere. This may be due to the tilt of the earth at the time of the year this data was gathered.
+
+                        </p>
+
+                    </div> 
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Creating five column box to place the four different images under "Visualizations" -->
+
+        <div class="col-md-5" style="padding-right:125px">
+
+            <div class="card">
+
+                <div class="card-body">
+
+                    <h2 class="card-title">Visualizations</h2>
+
+                    <hr class="my-4">
+
+                    <div class = "text-center">
+
+                        <a href="maxtemp.html" >
+
+                            <img src="Max Temp.png" alt="Max Temp" height ="175" width="225">
+
+                        </a>
+
+                        <a href="humidity.html" >
+
+                            <img src="humidity.png" alt="Humidity" height ="175" width="225">
+
+                        </a>
+
+                        <a href="cloudiness.html" >
+
+                            <img src="cloudiness.png" alt="Cloudiness" height ="175" width="225">
+
+                        </a>
+
+                        <a href="windspeed.html" >
+
+                            <img src="Wind Speed.png" alt="Wind Speed" height ="175" width="225">
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Scripts necessary for bootstrap elements on the page to be functional -->
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    </body>
+
+</html>
